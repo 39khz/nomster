@@ -104,7 +104,10 @@
 <% end %>
 
 <% @place.photos.each do |photo| %>
-  <%= photo.caption %>
+  <div>
+    <%= photo.caption %>
+    <%= image_tag photo.picture.to_s, class: 'img-fluid' %>
+  </div>
 <% end %>
 
 
